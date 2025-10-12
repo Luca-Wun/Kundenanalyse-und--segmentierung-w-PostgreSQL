@@ -81,7 +81,6 @@ Um die Entwicklung des Kundenstammts über die Zeit nachzuvollziehen, wurden fol
 <br> </br>
 
 
-
 ### Kundensegmentierung nach RFM
 Die Zusammensetzung des Kundenstamms wurde genauer analysiert, indem die Kunden anhand folgender Aspekte segmentiert und untersucht wurden:
 - Analyse der inaktiven Tage pro Kunden (Recency)
@@ -100,7 +99,7 @@ Die für die Beantwortung dieser Fragen durchgeführten SQL-Abfragen können [hi
 - **Finanzielle Stabilität**: Der durchschnittliche Customer Lifetime Value (LTV) über alle Käufe hinweg liegt bei 165 R$. Rund 80% der Kunden haben einen LTV von unter 200 R$, wobei die Verteilung durch wenige Ausreißer mit einem LTV von bis zu 13.500 R$ nach oben verzerrt wird. Die Umsatzgenerierung ist ungleich über die Kunden hinweg verteilt: Die oberen 25% der Kunden sind für 60% des Gesamtumsatzes verantwortlich, während die untere Hälfte etwa 20% beisteuert. Während es also eine Konzentration der Umsatzgenerierung gibt, ist die Ungleichheit ist jedoch moderat, sodass der Erfolg nicht von einer extrem kleinen Gruppe abhängt.
 <br> </br>
 <img src="Bilder/Monetary.png" width="600">
-<br> </br>
+
 
 - **Loyalitäts-Treiber**: Der Aufbau von Kundenloyalität wird von spezifischen Kategorien getragen: Modezubehör wird von loyalen Kunden mit einer 1,8-fach höheren Frequenz gekauft und liefert den 11-fachen Umsatzbeitrag. Auch Bett, Tisch und Bad, die beliebteste Kategorie, ist ein wichtiger Frequenzgeber und liefert 1,7-mal so viel Umsatz bei Wiederholungskäufern. Für die Umsatzmaximierung bei loyalen Kunden sind Uhren & Geschenke (13% Umsatzanteil bei Wiederholungskunden) und Telekommunikation (Umsatzanteil steigt von 2% auf 12%) entscheidend. Hier wird seltener, aber teurere Produkte gekauft. Produkte der Kategorie Schönheit und Gesundheit scheinen eher vom Zweitkauf abzuhalten und machen ihn um 20% unwahrscheinlicher mit weniger Umsatz. In der regionalen Herkunft unterscheiden sich die Kundengruppen kaum.
 <br> </br>
@@ -124,6 +123,7 @@ Die für diese Analysen durchgeführten SQL-Abfragen können [hier](/Skripte/Kun
 - **Dominanter Churn**: Ein Großteil der Kundenbasis ist bereits abgewandert oder gefährted. 65% der Kunden sind mit über 6 Monaten ohne Aktivität abgewandert, während 18% der Kundenbasis, also 18.000 Kunden mit zwischen 3 und 6 Monaten Inaktivität Gefahr laufen, ebenfalls abzuwandern. Da die 70% der Wiederholungskäufe innerhalb der ersten 150 Tage nach dem Erstkauf erfolgen, ist dieser Zeitraum kritisch. Um aktive Kunden zu halten, sind besonders die ersten 50 Tage entscheidend, in denen allein 40% der Zweitkäufe erfolgen.
 <br> </br>
 ![Churn](/Bilder/Churn.png)
+
 <br> </br>
 
 ## Empfehlungen
@@ -136,7 +136,6 @@ Aus den Analyseergebnissen lassen sich folgende zentrale Handlungsempfehlungen a
 - **Akquisestrategie**: Ansichsts der sinkenden Bindungsrate über die Kohorten und der Konzentration des Umsatzes auf die oberen 25% der Kunden wäre eine Überprüfung der Akquisekanäle zu empfehlen. Neukunden-Kampagnen sollten auf jene Segmente und Kanäle ausgerichtet werden, die historisch Kunden mit höherem Bestellwert (über 165 R$) zusammenhängen oder einer höheren Konversionswahrscheinlichkeit zum Zweitkauf liefern.
 
 - **Ursachsenanalyse (Nächster Schritt)**: Da 97% der Kunden von Olist keinen zweiten Kauf tätigen, liegt die Vermutung nahe, dass die Kunden mit der gebotenen Leistung nicht zufrieden waren. Ein weiteres Projekt widmet sich daher der Analyse der Kundenbewertung sowie der Testung spezifischer Hypothesen zu den Ursachen der hohen Abwanderung. Die Ergebnisse dieser Analyse werden nach der Durchführung hier verlinkt.
-
 <br> </br>
 
 ## Technische Details

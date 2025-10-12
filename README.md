@@ -101,6 +101,7 @@ Die für die Beantwortung dieser Fragen durchgeführten SQL-Abfragen können [hi
 <br> </br>
 <img src="Bilder/Monetary.png" width="600">
 <br> </br>
+
 - **Loyalitäts-Treiber**: Der Aufbau von Kundenloyalität wird von spezifischen Kategorien getragen: Modezubehör wird von loyalen Kunden mit einer 1,8-fach höheren Frequenz gekauft und liefert den 11-fachen Umsatzbeitrag. Auch Bett, Tisch und Bad, die beliebteste Kategorie, ist ein wichtiger Frequenzgeber und liefert 1,7-mal so viel Umsatz bei Wiederholungskäufern. Für die Umsatzmaximierung bei loyalen Kunden sind Uhren & Geschenke (13% Umsatzanteil bei Wiederholungskunden) und Telekommunikation (Umsatzanteil steigt von 2% auf 12%) entscheidend. Hier wird seltener, aber teurere Produkte gekauft. Produkte der Kategorie Schönheit und Gesundheit scheinen eher vom Zweitkauf abzuhalten und machen ihn um 20% unwahrscheinlicher mit weniger Umsatz. In der regionalen Herkunft unterscheiden sich die Kundengruppen kaum.
 <br> </br>
 <img src="Bilder/Produkterfolg.png" width="600">

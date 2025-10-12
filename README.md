@@ -77,7 +77,7 @@ Um die Entwicklung des Kundenstammts über die Zeit nachzuvollziehen, wurden fol
 
 - **Dominanz der Neukunden**: Das Wachstum im Umsatz wird in jedem Monat zu ca 90% durch Neukunden erwirtschaftet. Obwohl der Anteil an Neukunden leicht sinkt, waren im aktuellsten Monat immer 97% der aktiven Kunden Neukunden. Das Unternehmen ist also erfolgreich in Neukundenakquise, muss aber hohe Ressourcen einsetzen, um jeden Monat fast seine gesamte Kundenbasis neu zu gewinnen. Die Wertigkeit der Bestandskunden des Unternehmens zeigt sich außerdem darin, dass ein Bestandskunde monatlich mehr Geld ausgibt als ein Neukunde.
 <br> </br>
-<img src="Bilder/Neukundenanteil.png" width="400">
+<img src="Bilder/Neukundenanteil.png" width="500">
 <br> </br>
 
 
@@ -116,7 +116,7 @@ Die für diese Analysen durchgeführten SQL-Abfragen können [hier](/Skripte/Kun
 
 ![Bindung](/Bilder/Kundenbindung.png)
 #### Zentrale Erkenntnisse
-- **Abflachender Umsatz**: Der Umsatz im Akquisequartal (relatives Quartal 0) ist über die Kundenkohorten hinweg stetig gestiegen und erreichte in Q2 2018 einen Peak von 3.2 Mio R$ Allerdings bricht der Umsatz in den Folgequartalen aufgrund des hohen Anteils an Einmalkäufern massiv ein. In allen Kohorten wird in den Folgequartalen nur noch 1-4% des Gesamtumsatzes der Kohorte erzielt, mit sinkender Tendenz über die Zeit. Während das erste Folgequartal der Kohorte Q1 2017 noch 0,9% des Umsatzes (7.500R$) ausmacht, sind es in Q2 2018 nur noch 0,4% (12.176 R$).
+- **Abflachender Umsatz**: Der Umsatz im Akquisequartal (relatives Quartal 0) ist über die Kundenkohorten hinweg stetig gestiegen und erreichte in Q2 2018 einen Peak von 3.2 Mio R$. Allerdings bricht der Umsatz in den Folgequartalen aufgrund des hohen Anteils an Einmalkäufern massiv ein. In allen Kohorten wird in den Folgequartalen nur noch 1-4% des Gesamtumsatzes der Kohorte erzielt, mit sinkender Tendenz über die Zeit. Während das erste Folgequartal der Kohorte Q1 2017 noch 0,9% des Umsatzes (7.500R$) ausmacht, sind es in Q2 2018 nur noch 0,4% (12.000 R$).
 
 - **Sinkende Bindung über Kohorten**: Die Kunden von Olist bestehen nicht nur fast ausschließlich aus Einmalkäuftern, die Kundenbindungsrate ist auch über die Zeit gesunken. Während 3% der Kunden aus der Kohorte Q1 2017 erneut kauften, sank dieser Prozentsatz für die Kohorte Q2 2018 auf nur 0,5%. Dieser negative Trend bei der Kundenbindung ist besonders seit der Kohorte Q4 2017 zu beobachten. Eventuell ist dies auf eine hohe Zahl neu gewonnener Kunden im November 2017 zurückzuführen, die aber nicht gebunden werden konnten. 
 

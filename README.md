@@ -21,11 +21,11 @@ Olist ist ein 2015 gegründetes brasilianisches E-Commerce-Unternehmen, das übe
 Für die Jahre 2017-2018 stellt das Unternehmen umfangreiche Daten zu Transaktionen und Kunden bereit. Diese Daten ermöglichen es, fundierte Kenntnisse über den Kundenstamm und dessen Entwicklung im Zeitverlauf zu gewinnen. Die Analyse schafft eine datenbasierte Grunlage um strategische Entscheidungen zu treffen, die auf die Kundenbasis angepasst sind.
 
 Das Projekt bietet Erkenntnise und Empfehlungen zu den folgenden Bereichen der Kundenanalyse:
-- Wie hat sich Kundenzahl und Umsatz über die Zeit entwickelt und sowie die Entwicklung der Neukundenaquise (Kaufverhalten und wiederkehrende Kunden)
+- Wie hat sich Kundenzahl und Umsatz über die Zeit entwickelt und welche Rolle spielen Neukunden dabei (Kaufverhalten und wiederkehrende Kunden)?
 
 - Wer sind die wertvollsten Kunden (nach Recency, Frequency und Monetary Value) und was macht diese Gruppen aus?
 
-- Wie ist die Kundenbindung und -abwanderung über die Zeit?
+- Wie ist die Kundenbindung und -abwanderung und wie hat sie sich über die Zeit entwickelt? Wie aktiv ist die aktuelle Kundenbasis?
 <br> </br>
 
 Die SQL-Abfragen zur Überprüfung der Datenqualität und Datenbereinigung können [hier](/Skripte/Qualitätskontrolle%20Daten.sql) eingesehen werden.  

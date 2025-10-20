@@ -18,7 +18,7 @@
 ## Hintergrund und Übersicht
 Olist ist ein 2015 gegründetes brasilianisches E-Commerce-Unternehmen, das über seine Webseite und App Kunden mit Anbietern einer breiten Spannweite an Produkten verbindet.
 
-Für die Jahre 2017-2018 stellt das Unternehmen umfangreiche Daten zu Transaktionen und Kunden bereit. Diese Daten ermöglichen es, fundierte Kenntnisse über den Kundenstamm und dessen Entwicklung im Zeitverlauf zu gewinnen. Die Analyse schafft eine datenbasierte Grunlage um strategische Entscheidungen zu treffen, die auf die Kundenbasis angepasst sind.
+Für die Jahre 2017-2018 stellt das Unternehmen umfangreiche Daten zu Transaktionen und Kunden bereit. Diese Daten ermöglichen es, fundierte Kenntnisse über den Kundenstamm und dessen Entwicklung im Zeitverlauf zu gewinnen. Die Analyse schafft eine datenbasierte Grundlage um strategische Entscheidungen zu treffen, die auf die Kundenbasis angepasst sind.
 
 Das Projekt bietet Erkenntnise und Empfehlungen zu den folgenden Bereichen der Kundenanalyse:
 - Wie hat sich Kundenzahl und Umsatz über die Zeit entwickelt und welche Rolle spielen Neukunden dabei (Kaufverhalten und wiederkehrende Kunden)?
@@ -34,7 +34,7 @@ Eine Ausführung der genutzten Kenntnisse ist [hier](#technische-details) zu fin
 <br> </br>
 
 ## Datenstruktur
-Das Unternehmen stellt einen umfangreichen Datensatz bereit, der Informationen zu Kunden, Transaktionen, Zulieferern und Produkten in insgesamt 9 Tabellen enthält. Der Datensatz umfasst 99441 Bestellungen. 
+Das Unternehmen stellt einen umfangreichen Datensatz bereit, der Informationen zu Kunden, Transaktionen, Zulieferern und Produkten in insgesamt 9 Tabellen enthält. Der Datensatz umfasst 99.441 Bestellungen. 
 
 Im Zentrum der Analyse stehen dabei insbesondere:
 - `order_dataset`: Enthält Transaktionendaten wie Bestellstatus und Bestelldatum.
@@ -48,7 +48,7 @@ Im Zentrum der Analyse stehen dabei insbesondere:
 
 ![ERD](/Bilder/ERD_Kundenanalyse.png)
 <br> </br>
-Vor Beginn der Analyse wurde die Datenqualität überprüft und identifizierte Probleme gelöst und dokumentiert. Die dafür verwendeten SQL-Abfragen können [hier](/Skripte/Qualitätskontrolle%20Daten.sql) nachgelesen, während die Problemdokumentation [hier](/Bilder/Datenqualitätsprotokoll.png) einsehbar ist.
+Vor Beginn der Analyse wurde die Datenqualität überprüft und identifizierte Probleme gelöst und dokumentiert. Die dafür verwendeten SQL-Abfragen können [hier](/Skripte/Qualitätskontrolle%20Daten.sql) nachgelesen werden, während die Problemdokumentation [hier](/Bilder/Datenqualitätsprotokoll.png) einsehbar ist.
 <br> </br>
 
 ## Kurzzusammenfassung
@@ -71,11 +71,11 @@ Um die Entwicklung des Kundenstammts über die Zeit nachzuvollziehen, wurden fol
 
 ![Entwicklung](/Bilder/Monatliche%20Entwicklung.png)
 #### Zentrale Erkenntnisse
-- **Volumenwachstum:** Im betrachteten Zeitraum hat das Unternehmen ein starkes Wachstum in allen untersuchten Metriken erlebt. Die monatliche Kundenzahl hat sich von 718 im Januar 2017 auf 6310 im August 2018 fast verzehnfacht und der monatliche Umsatz ist im gleichen Zeitraum von 127000R$ auf 985000R$ gestiegen. Im Jahresvergleich sind die Werte in 2018 durchgängig höher, wobei sich der Wachstumstrend abgeschwächt hat. Dabei gibt es im November einen deutlichen Peak (7183 Kunden und 1.1,2 Mio R$ Umsatz), der eine erfolgreiche Black Friday Aktion zeigt.
+- **Volumenwachstum:** Im betrachteten Zeitraum hat das Unternehmen ein starkes Wachstum in allen untersuchten Metriken erlebt. Die monatliche Kundenzahl hat sich von 718 im Januar 2017 auf 6310 im August 2018 fast verzehnfacht und der monatliche Umsatz ist im gleichen Zeitraum von 127.000R$ auf 985.000R$ gestiegen. Im Jahresvergleich sind die Werte in 2018 durchgängig höher, wobei sich der Wachstumstrend abgeschwächt hat. Dabei gibt es im November einen deutlichen Peak (7.183 Kunden und 1,2 Mio R$ Umsatz), der eine erfolgreiche Black Friday Aktion zeigt.
 
-- **Zurückbleiben der Profitabilität**: Während das Unternehmen im Volumen stark gewachsen ist, zeigt der durchschnittliche Bestellwert pro Kunde (AOV) sowie der durchschnittliche Gesamtumsatz pro Kunde (ARPC) über den gesamten Zeitraum stagnierende bis leicht rückläufige Werte. Beide Profitabilitätswerte liegen im Bereich von 160R$ - 170R$ und liegen zudem aufgrund niedriger Kauffrequenz sehr nah beieinander. Besonders zum Ende 2017 (AOV 152R$) und im aktuellesten Monat (AOV 155R$) sind die Werte gesunken. Der Fokus liegt also aktuell auf Wachstum und nicht auf Wertsteigerung der Kunden.
+- **Zurückbleiben der Profitabilität**: Während das Unternehmen im Volumen stark gewachsen ist, zeigt der durchschnittliche Bestellwert pro Kunde (AOV) sowie der durchschnittliche Gesamtumsatz pro Kunde (ARPC) über den gesamten Zeitraum stagnierende bis leicht rückläufige Werte. Beide Profitabilitätswerte liegen im Bereich von 160R$ - 170R$ und sind zudem aufgrund niedriger Kauffrequenz sehr ähnlich. Besonders zum Ende 2017 (AOV 152R$) und im aktuellesten Monat (AOV 155R$) sind die Werte gesunken. Die aktuelle Strategie fördert also erfolgreich Wachstum, aber nicht die Wertsteigerung der Kunden.
 
-- **Dominanz der Neukunden**: Das Wachstum im Umsatz wird in jedem Monat zu ca 90% durch Neukunden erwirtschaftet. Obwohl der Anteil an Neukunden leicht sinkt, waren im aktuellsten Monat immer 97% der aktiven Kunden Neukunden. Das Unternehmen ist also erfolgreich in Neukundenakquise, muss aber hohe Ressourcen einsetzen, um jeden Monat fast seine gesamte Kundenbasis neu zu gewinnen. Die Wertigkeit der Bestandskunden des Unternehmens zeigt sich außerdem darin, dass ein Bestandskunde monatlich mehr Geld ausgibt als ein Neukunde.
+- **Dominanz der Neukunden**: Das Wachstum im Umsatz wird in jedem Monat zu ca 90% durch Neukunden erwirtschaftet. Obwohl der Anteil an Neukunden leicht sinkt, waren im aktuellsten Monat immer 97% der aktiven Kunden Neukunden. Das Unternehmen ist also sehr erfolgreich in der Neukundenakquise, muss aber hohe Ressourcen einsetzen, um jeden Monat fast seine gesamte Kundenbasis neu zu gewinnen. Die Wertigkeit der Bestandskunden des Unternehmens zeigt sich außerdem darin, dass ein Bestandskunde monatlich mehr Geld ausgibt als ein Neukunde.
 <br> </br>
 <img src="Bilder/Neukundenanteil.png" width="500">
 <br> </br>
@@ -92,16 +92,16 @@ Die für die Beantwortung dieser Fragen durchgeführten SQL-Abfragen können [hi
 
 ![RF](/Bilder/Recency_Frequency.png)
 #### Zentrale Erkenntnisse
-- **Überwiegend Einmalkäufer**: Die Kundenbasis von Olist ist durch eine extreme Loyalitätslücke gekennzeichnet: Rund 97% der Kunden tätigen nur einen einzigen Kauf. Weniger als 1% der Kunden kauft mehr als zweimal. Die durchschnittliche monatliche Kauffrequenz ist in der gesamten Historie leicht von einem Spitzenwert von 1,045 auf 1,006 Käufe pro Monat gesunken, was die Herausforderung der Kundenbindung (siehe nächster Abschnitt) verdeutlicht.
+- **Überwiegend Einmalkäufer**: Die Kundenbasis von Olist ist durch eine extreme Loyalitätslücke gekennzeichnet: Rund 97% der Kunden tätigen nur einen einzigen Kauf. Weniger als 1% der Kunden kauft mehr als zweimal. Die durchschnittliche monatliche Kauffrequenz ist von einem Spitzenwert von 1,05 Käufen im Monat im Januar 2017 auf aktuell 1,01 Käufe pro Monat noch gesunken, was die Herausforderung der Kundenbindung verdeutlicht.
 
-- **Reaktivierung der Kunden**: Durch die niedrige Kauffrequenz sind die meisten Kunden seit ihrem ersten Kauf inaktiv. Knapp 90% der Kundenbasis haben seit über 100 Tagen keinen Kauf mehr getätigt, bei einer durchschnittlichen Inaktivität von 285 Tagen. Die größte Gruppe, bestehend aus 11.798 Kunden, befindet sich in einer kritischen Inaktivitätsphase von 150 bis 200 Tagen, die Reaktivierungspotential bildet.
+- **Reaktivierung der Kunden**: Durch die niedrige Kauffrequenz sind die meisten Kunden seit ihrem ersten Kauf inaktiv. Knapp 90% der Kundenbasis haben seit über 100 Tagen keinen Kauf mehr getätigt, bei einer durchschnittlichen Inaktivität von 285 Tagen. Die größte Gruppe, bestehend aus 11.798 Kunden, befindet sich in einer kritischen Inaktivitätsphase von 150 bis 200 Tagen, die ein hohes Reaktivierungspotential bildet.
 
-- **Finanzielle Stabilität**: Der durchschnittliche Customer Lifetime Value (LTV) über alle Käufe hinweg liegt bei 165 R$. Rund 80% der Kunden haben einen LTV von unter 200 R$, wobei die Verteilung durch wenige Ausreißer mit einem LTV von bis zu 13.500 R$ nach oben verzerrt wird. Die Umsatzgenerierung ist ungleich über die Kunden hinweg verteilt: Die oberen 25% der Kunden sind für 60% des Gesamtumsatzes verantwortlich, während die untere Hälfte etwa 20% beisteuert. Während es also eine Konzentration der Umsatzgenerierung gibt, ist die Ungleichheit ist jedoch moderat, sodass der Erfolg nicht von einer extrem kleinen Gruppe abhängt.
+- **Finanzielle Stabilität**: Der durchschnittliche Customer Lifetime Value (LTV) über alle Käufe hinweg liegt bei 165R$. Rund 80% der Kunden haben einen LTV von unter 200R$, wobei die Verteilung durch wenige Ausreißer mit einem LTV von bis zu 13.500R$ nach oben verzerrt wird. Die Umsatzgenerierung ist ungleich über die Kunden hinweg verteilt: Die oberen 25% der Kunden sind für 60% des Gesamtumsatzes verantwortlich, während die untere Hälfte etwa 20% beisteuert. Während es also eine Konzentration der Umsatzgenerierung gibt, ist die Ungleichheit ist jedoch moderat, sodass der Erfolg nicht von einer extrem kleinen Gruppe abhängt.
 <br> </br>
 <img src="Bilder/Monetary.png" width="600">
 
 
-- **Loyalitäts-Treiber**: Der Aufbau von Kundenloyalität wird von spezifischen Kategorien getragen: Modezubehör wird von loyalen Kunden mit einer 1,8-fach höheren Frequenz gekauft und liefert den 11-fachen Umsatzbeitrag. Auch Bett, Tisch und Bad, die beliebteste Kategorie, ist ein wichtiger Frequenzgeber und liefert 1,7-mal so viel Umsatz bei Wiederholungskäufern. Für die Umsatzmaximierung bei loyalen Kunden sind Uhren & Geschenke (13% Umsatzanteil bei Wiederholungskunden) und Telekommunikation (Umsatzanteil steigt von 2% auf 12%) entscheidend. Hier wird seltener, aber teurere Produkte gekauft. Produkte der Kategorie Schönheit und Gesundheit scheinen eher vom Zweitkauf abzuhalten und machen ihn um 20% unwahrscheinlicher mit weniger Umsatz. In der regionalen Herkunft unterscheiden sich die Kundengruppen kaum.
+- **Loyalitäts-Treiber**: Der Aufbau von Kundenloyalität wird von spezifischen Kategorien getragen: Modezubehör wird von loyalen Kunden mit einer 1,8-fach höheren Frequenz gekauft und liefert den 11-fachen Umsatzbeitrag. Auch "Bett, Tisch und Bad", die beliebteste Kategorie, ist ein wichtiger Frequenzgeber und liefert 1,7-mal so viel Umsatz bei Wiederholungskäufern. Für die Umsatzmaximierung bei loyalen Kunden sind Uhren & Geschenke (13% Umsatzanteil bei Wiederholungskunden) und Telekommunikation (Umsatzanteil steigt von 2% auf 12%) entscheidend. Hier wird seltener, aber teurere Produkte gekauft. Produkte der Kategorie Schönheit und Gesundheit scheinen eher vom Zweitkauf abzuhalten und machen ihn um 20% unwahrscheinlicher. In der regionalen Herkunft unterscheiden sich die Kundengruppen kaum.
 <br> </br>
 <img src="Bilder/Produkterfolg.png" width="600">
 <br> </br>
@@ -116,11 +116,11 @@ Die für diese Analysen durchgeführten SQL-Abfragen können [hier](/Skripte/Kun
 
 ![Bindung](/Bilder/Kundenbindung.png)
 #### Zentrale Erkenntnisse
-- **Abflachender Umsatz**: Der Umsatz im Akquisequartal (relatives Quartal 0) ist über die Kundenkohorten hinweg stetig gestiegen und erreichte in Q2 2018 einen Peak von 3.2 Mio R$. Allerdings bricht der Umsatz in den Folgequartalen aufgrund des hohen Anteils an Einmalkäufern massiv ein. In allen Kohorten wird in den Folgequartalen nur noch 1-4% des Gesamtumsatzes der Kohorte erzielt, mit sinkender Tendenz über die Zeit. Während das erste Folgequartal der Kohorte Q1 2017 noch 0,9% des Umsatzes (7.500R$) ausmacht, sind es in Q2 2018 nur noch 0,4% (12.000 R$).
+- **Abflachender Umsatz**: Der Umsatz im Akquisequartal ist über die Kundenkohorten hinweg stetig gestiegen und erreichte in Q2 2018 einen Peak von 3.2 Mio R$. Allerdings bricht der Umsatz in den Folgequartalen aufgrund des hohen Anteils an Einmalkäufern massiv ein. In allen Kohorten wird in den Folgequartalen nur noch 1-4% des Gesamtumsatzes der Kohorte erzielt, mit sinkender Tendenz über die Zeit. Während das erste Folgequartal der Kohorte Q1 2017 noch 0,9% des Umsatzes dieser Kohorte (7.500R$) ausmacht, sind es in Q2 2018 nur noch 0,4% (12.000R$).
 
 - **Sinkende Bindung über Kohorten**: Die Kunden von Olist bestehen nicht nur fast ausschließlich aus Einmalkäuftern, die Kundenbindungsrate ist auch über die Zeit gesunken. Während 3% der Kunden aus der Kohorte Q1 2017 erneut kauften, sank dieser Prozentsatz für die Kohorte Q2 2018 auf nur 0,5%. Dieser negative Trend bei der Kundenbindung ist besonders seit der Kohorte Q4 2017 zu beobachten. Eventuell ist dies auf eine hohe Zahl neu gewonnener Kunden im November 2017 zurückzuführen, die aber nicht gebunden werden konnten. 
 
-- **Dominanter Churn**: Ein Großteil der Kundenbasis ist bereits abgewandert oder gefährted. 65% der Kunden sind mit über 6 Monaten ohne Aktivität abgewandert, während 18% der Kundenbasis, also 18.000 Kunden mit zwischen 3 und 6 Monaten Inaktivität Gefahr laufen, ebenfalls abzuwandern. Da die 70% der Wiederholungskäufe innerhalb der ersten 150 Tage nach dem Erstkauf erfolgen, ist dieser Zeitraum kritisch. Um aktive Kunden zu halten, sind besonders die ersten 50 Tage entscheidend, in denen allein 40% der Zweitkäufe erfolgen.
+- **Dominanter Churn**: Ein Großteil der Kundenbasis ist bereits abgewandert oder gefährdet. 65% der Kunden sind mit über 6 Monaten ohne Aktivität abgewandert, während 18% der Kundenbasis, also 18.000 Kunden, mit zwischen 3 und 6 Monaten Inaktivität Gefahr laufen, ebenfalls abzuwandern. Da 70% der Wiederholungskäufe innerhalb der ersten 150 Tage nach dem Erstkauf erfolgen, ist dieser Zeitraum kritisch. Um aktive Kunden zu halten, sind besonders die ersten 50 Tage entscheidend, in denen allein 40% der Zweitkäufe erfolgen.
 <br> </br>
 ![Churn](/Bilder/Churn.png)
 
@@ -131,11 +131,11 @@ Aus den Analyseergebnissen lassen sich folgende zentrale Handlungsempfehlungen a
 
 - **Frequenzsteigerung und Kundenbindung**: Die höchste Priorität sollte auf der Konvertierung von Erst- zu Zweitkäufern liegen, um die Loyalitätslücke (97% Einmalkäufer) zu schließen und die Kosten für Neukundenakquise zu senken. Aktuell befinden sich ca. 12.000 Kunden in einem für die Reaktivierung kritischen Zeitfenster von 150 inaktiven Tagen. Um diese Kundenbasis zu halten und zu Wiederholungskäufen zu motivieren, sollten Anreize zum Zweitkauf gesetzt werden. Bei Wiederholungskäufern beliebte Produkte aus den Kategorien Modezubehör und Bett, Tisch und Bad eignen sich optimal für Sonderangebote an Neukunden, insbesondere nach Aktionen mit hohem Neukundenanteil wie dem Black Friday. 
 
-- **Wertsteigerung**: Um die stagnierende Profitabilität (AOV/ARPC bei ~160 R$) zu verbessern, sollte der Wert bereits gebundenen Kunden gezielt erhöht werden, indem zum vorherigen Kauf komplementäre oder höherpreiseige Produkte angeboten werden. Die Kategorien Uhren & Geschenke und Telekommunikation sind hierfür gut geeignet, da sie durch höherpreisige Käufe überproportional zum Umsatz von Wiederholungskunden beitragen. Hierfür sollten Upselling-Pfade mit  personalisierten Kampagnen (z.B. komplementäre Produkte) für Bestandskunden entwickelt werden.
+- **Wertsteigerung**: Um die stagnierende Profitabilität (AOV/ARPC bei ~160 R$) zu verbessern, sollte der Wert bereits gebundenen Kunden gezielt erhöht werden, indem zum vorherigen Kauf komplementäre höherpreiseige Produkte angeboten werden. Die Kategorien Uhren & Geschenke und Telekommunikation sind hierfür gut geeignet, da sie durch höherpreisige Käufe überproportional zum Umsatz von Wiederholungskunden beitragen. Hierfür sollten Upselling-Pfade mit  personalisierten Kampagnen für Bestandskunden entwickelt werden.
 
-- **Akquisestrategie**: Ansichsts der sinkenden Bindungsrate über die Kohorten und der Konzentration des Umsatzes auf die oberen 25% der Kunden wäre eine Überprüfung der Akquisekanäle zu empfehlen. Neukunden-Kampagnen sollten auf jene Segmente und Kanäle ausgerichtet werden, die historisch Kunden mit höherem Bestellwert (über 165 R$) zusammenhängen oder einer höheren Konversionswahrscheinlichkeit zum Zweitkauf liefern.
+- **Akquisestrategie**: Ansichsts der sinkenden Bindungsrate über die Kohorten und der Konzentration des Umsatzes auf die oberen 25% der Kunden wäre eine Überprüfung der Akquisekanäle zu empfehlen. Neukunden-Kampagnen sollten auf jene Segmente und Kanäle ausgerichtet werden, die historisch mit höherem Bestellwert (über 165 R$) zusammenhängen oder eine höhere Wahrscheinlichkeit zum Zweitkauf liefern.
 
-- **Ursachsenanalyse (Nächster Schritt)**: Da 97% der Kunden von Olist keinen zweiten Kauf tätigen, liegt die Vermutung nahe, dass die Kunden mit der gebotenen Leistung nicht zufrieden waren. Ein weiteres Projekt widmet sich daher der Analyse der Kundenbewertung sowie der Testung spezifischer Hypothesen zu den Ursachen der hohen Abwanderung. Die Ergebnisse dieser Analyse werden nach der Durchführung hier verlinkt.
+- **Ursachsenanalyse (Nächster Schritt)**: Da 97% der Kunden von Olist keinen zweiten Kauf tätigen, liegt die Vermutung nahe, dass die Kunden mit der gebotenen Leistung nicht zufrieden waren. Ein weiteres Projekt widmet sich daher der Analyse der Kundenbewertung sowie der Testung spezifischer Hypothesen zu den Ursachen der hohen Abwanderung. Die Ergebnisse dieser Analyse sind [hier](https://github.com/Luca-Wun/Analyse-von-Einflussfaktoren-auf-Kundenzufriedenheit-w-R?tab=readme-ov-file) zu finden.
 <br> </br>
 
 ## Technische Details
